@@ -3,7 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, sans-serif;
+    
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: normal;
+
 }
 
 body {
@@ -12,7 +16,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,6 +23,9 @@ body {
     padding: 1rem 5%;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .logo {
@@ -37,6 +43,7 @@ body {
     color: #333;
     font-weight: bold;
     font-size: 1.5rem;
+    
 }
 
 .nav-links {
@@ -62,10 +69,13 @@ body {
 
 .login-btn {
     padding: 0.5rem 1.5rem;
-    border: none;
+
     background: none;
-    color: #666;
+    color:#5978ff;
     cursor: pointer;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #5978ff;
 }
 
 .get-started-btn {
@@ -73,7 +83,7 @@ body {
     border: none;
     background-color: #5b76f7;
     color: white;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -82,13 +92,13 @@ body {
     background-color: #4a61d1;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5rem 5%;
     gap: 2rem;
+    background-color: #f7f9ff;
 }
 
 .hero-content {
@@ -102,14 +112,20 @@ body {
 }
 
 .hero-title h1 {
-    font-size: 3rem;
+    font-size: 48px;
     line-height: 1.2;
-}
+    margin-top: -26px;
 
+}
+.hero-icon{
+    margin-left: -26px;
+}
 .hero-title span {
     color: #5b76f7;
 }
-
+.underline {
+    padding-left: 260px;
+}
 .hero-description {
     position: relative;
     margin-bottom: 2rem;
@@ -152,7 +168,6 @@ body {
     height: auto;
 }
 
-/* Watch Actions Section */
 .watch-actions {
     text-align: center;
     padding: 5rem 5%;
@@ -163,14 +178,20 @@ body {
 .video-container {
     max-width: 800px;
     margin: 2rem auto;
+    background-color: #0d1226;
+    border-radius:10px ;
+    height: 375px;
 }
-
+.video-container h3{
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    
+}
 .video-container iframe {
     width: 100%;
     border-radius: 8px;
 }
 
-/* Solutions Section */
 .solutions {
     padding: 5rem 5%;
     text-align: center;
@@ -195,7 +216,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* Advisors Section */
 .advisors {
     padding: 5rem 5%;
     text-align: center;
@@ -252,7 +272,6 @@ body {
     cursor: pointer;
 }
 
-/* Get Connected Section */
 .get-connected {
     padding: 5rem 5%;
     text-align: center;
@@ -273,7 +292,6 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Testimonials Section */
 .testimonials {
     padding: 5rem 5%;
     text-align: center;
@@ -293,7 +311,6 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Deals Section */
 .deals {
     padding: 5rem 5%;
     text-align: center;
@@ -328,7 +345,6 @@ body {
     cursor: pointer;
 }
 
-/* Footer */
 footer {
     background: white;
     padding: 5rem 5% 2rem;
@@ -369,32 +385,4 @@ hr {
 .footer-bottom {
     text-align: center;
     color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .solutions-grid,
-    .advisors-grid,
-    .testimonials-grid,
-    .deals-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-    }
-
-    .solutions-grid,
-    .advisors-grid,
-    .testimonials-grid,
-    .deals-grid,
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .steps {
-        grid-template-columns: 1fr;
-    }
 }
