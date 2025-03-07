@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -34,14 +34,14 @@ body {
 
 .navbar-container {
   width: 100%;
-  max-width: 1400px; /* Keeps content centered and prevents extreme stretching */
+  max-width: 1400px; 
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Logo Section */
+
 .logo {
   display: flex;
   align-items: center;
@@ -60,7 +60,7 @@ body {
   font-size: 1.5rem;
 }
 
-/* Navigation Links */
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -77,13 +77,12 @@ body {
   color: #5b76f7;
 }
 
-/* Authentication Buttons */
 .auth-buttons {
   display: flex;
   gap: 1rem;
 }
 
-/* Login Button */
+
 .login-btn {
   padding: 0.5rem 1.5rem;
   background: none;
@@ -99,7 +98,7 @@ body {
   color: white;
 }
 
-/* Get Started Button */
+
 .get-started-btn {
   padding: 0.5rem 1.5rem;
   border: none;
@@ -208,8 +207,10 @@ body {
     text-align: center;
     padding-top: 5%;
     position: relative;
+    width: auto;
+    height:auto;
+    padding-bottom: 100px;
     
-     
     
 }
 .watch-actions h1{
@@ -254,6 +255,7 @@ body {
     margin-bottom: 2rem;
     font-weight: bold;
     color: #333;
+    padding-top: 50px;
 }
 
 .solutions-container {
@@ -291,6 +293,10 @@ body {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+}
+.advisor{
+  height: max-content;
+  background-color: #eff1f8;
 }
 .advisorhead{
   font-size: 28px;
@@ -474,6 +480,7 @@ body {
   
   .explore-more {
     text-align: center;
+    padding-bottom: 150px;
   }
   
   .explore-more a {
@@ -526,7 +533,7 @@ body {
 
 
   .get-connected {
-    max-width: 1200px;
+    max-width: 1022px;
     margin: 0 auto;
     position: relative;
     padding: 2rem;
@@ -538,6 +545,8 @@ body {
     left: 0;
     width: 80px;
     transform: translate(-30%, -30%);
+    width: 370px;
+    height: 108px;
   }
   
   .title {
@@ -603,25 +612,109 @@ body {
     height: auto;
   }
   
-  @media (max-width: 968px) {
-    .content-container {
-      flex-direction: column;
-      gap: 3rem;
-    }
-  
-    .title {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-  
-    .get-connected {
-      padding: 1rem;
-    }
-  
-    .arrow-decoration {
-      width: 60px;
-    }
-  }
+.get-connected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.arrow-decoration {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+
+.steps {
+  border: 2px solid #28a745;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.step {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.step:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.step-label {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.step:nth-child(1) .step-label {
+  background-color: #28a745;
+}
+
+.step:nth-child(2) .step-label {
+  background-color: #17a2b8;
+}
+
+.step:nth-child(3) .step-label {
+  background-color: #20c997;
+}
+
+.step h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.step p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.illustration {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.steps-image {
+  width: 100%;
+  height: auto;
+}
+
 .testimonials {
     padding: 5rem 5%;
     text-align: center;
