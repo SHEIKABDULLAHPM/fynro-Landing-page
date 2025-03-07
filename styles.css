@@ -17,168 +17,189 @@ body {
 }
 
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
 }
 
+.navbar-container {
+  width: 100%;
+  max-width: 1400px; /* Keeps content centered and prevents extreme stretching */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Section */
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .logo img {
-    height: 32px;
+  height: 32px;
+  width: auto;
 }
 
 .logo a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.5rem;
-    
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
+/* Navigation Links */
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #666;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #5b76f7;
+  color: #5b76f7;
 }
 
+/* Authentication Buttons */
 .auth-buttons {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
+/* Login Button */
 .login-btn {
-    padding: 0.5rem 1.5rem;
-
-    background: none;
-    color:#5978ff;
-    cursor: pointer;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #5978ff;
+  padding: 0.5rem 1.5rem;
+  background: none;
+  color: #5978ff;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #5978ff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+.login-btn:hover {
+  background-color: #5978ff;
+  color: white;
+}
+
+/* Get Started Button */
 .get-started-btn {
-    padding: 0.5rem 1.5rem;
-    border: none;
-    background-color: #5b76f7;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: #5b76f7;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .get-started-btn:hover {
-    background-color: #4a61d1;
+  background-color: #4a61d1;
 }
 
+
+
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 5%;
-    gap: 2rem;
-    background-image: linear-gradient(to right,#f7f9ff, #ebeefd);
-    margin-left: 70px;
-    padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  gap: 2rem;
+  background-image: linear-gradient(to right,#f7f9ff, #ebeefd);
+  margin-left: 70px;
+  padding-top: 80px;
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 600px;
+  flex: 1;
+  max-width: 600px;
 }
 
 .hero-title {
-    
-    position: relative;
-    margin-bottom: 2rem;
+  
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .hero-title h1 {
-    text-align: start;
-    font-family: "Poppins";
-    font-weight: 600;
-    font-style: normal;
-    font-size: 47px;
-    line-height: 1.2;
-    margin-top: -26px;
+  text-align: start;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 47px;
+  line-height: 1.2;
+  margin-top: -26px;
 
 }
 .hero-icon{
-    margin-left: -26px;
+  margin-left: -26px;
 }
 .hero-title span {
-    color: #5b76f7;
+  color: #5b76f7;
 }
 .underline {
-    padding-top: -30px;
-     padding-left: 260px;
- }
+  padding-top: -30px;
+   padding-left: 260px;
+}
 .hero-description {
-    position: relative;
-    margin-bottom: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .hero-description p {
-    color: #666;
-    margin-bottom: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
 .features {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .feature {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .explore-btn {
-    padding: 0.8rem 2rem;
-    background-color: #5b76f7;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    
+  padding: 0.8rem 2rem;
+  background-color: #5b76f7;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  
 }
 
 .explore-btn:hover {
-    background-color: #4a61d1;
+  background-color: #4a61d1;
 }
 
 .hero-image img {
-    max-width:auto ;
-    height: auto;
-    margin-right: 100px;
-    margin-top: 70px;
+  max-width:auto ;
+  height: auto;
+  margin-right: 100px;
+  margin-top: 70px;
 }
 
 .watch-actions {
@@ -188,7 +209,7 @@ body {
     padding-top: 5%;
     position: relative;
     
-    
+     
     
 }
 .watch-actions h1{
@@ -271,27 +292,31 @@ body {
     color: #555;
     line-height: 1.5;
 }
+.advisorhead{
+  font-size: 28px;
+  padding-top: 101px;
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
 
-  .advisor-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
+.advisor-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 2rem;
+}
+
   
   .advisor-card {
     background: white;
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+    width: 320px;
+    height: 430px;
+    padding: 8px;
+    font-family: "poppins";
+    border-radius: 12px;
   }
   
   .advisor-card img {
@@ -305,27 +330,61 @@ body {
     top: 1rem;
     left: 1rem;
     background: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-  }
-  
+    padding: 0.25rem 0.75rem; 
+    border-radius: 6px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; 
+    height: 24px;
+}
+
+.top-rated h3 {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1E293B; 
+    margin: 0;
+    text-align: center;
+    font-family: "Arial", sans-serif; 
+}
+
   .advisor-info {
-    padding: 1.5rem;
+    padding-top: 2px;
+    padding-left: 6px;
   }
   
   .specialization {
-    background: #FFF5EB;
+    display: flex; 
+    align-items:start; 
+    background-image: linear-gradient(to right,#f3e6dc ,#f8f8f8,#ffff
+    );
+
     color: #995D2A;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
-    display: inline-block;
+    border-radius: 6px;
     margin-bottom: 1rem;
+    width: 272px;
+    min-height: 32px; 
+    
   }
-  
-  .crown {
-    margin-right: 0.5rem;
-  }
-  
+
+.crown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.special {
+    font-size: 12px;
+    white-space: nowrap; 
+    
+
+}
+
   .name-rating {
     display: flex;
     justify-content: space-between;
@@ -334,18 +393,33 @@ body {
   }
   
   .name-rating h2 {
-    font-size: 1.2rem;
+    font-size: 16px;
+    padding-left: 2px;
   }
   
   .rating {
-    background: #E7F9F0;
-    color: #0E815C;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #008545; 
+    color: #ffffff; 
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
-  }
+    width: 50px;
+    height: 24px;
+    font-size: 14px; 
+    font-weight: 600; 
+    text-align: center;
+}
+
   
   .star {
     color: #0E815C;
+  }
+  .star img{
+    width: 16px;
+    height: 16px;
+    padding-top: 5px;
   }
   
   .experience {
@@ -353,33 +427,45 @@ body {
     margin-bottom: 1rem;
   }
   
-  .clock {
-    margin-right: 0.5rem;
+ 
+  .clock img{
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
   }
   
   .credits-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f7f9ff;
+    width: 296px;
+    height: 60px;
+    padding: 12px;
+    border-radius: 12px;
   }
   
   .original {
     color: #666;
     text-decoration: line-through;
-    font-size: 0.9rem;
+    font-size: 12px;
   }
   
   .per-min {
-    font-weight: bold;
+    
+    font-size: 16px;
   }
   
   .book-btn {
     background: #4F7CFF;
     color: white;
     border: none;
-    padding: 0.5rem 2rem;
-    border-radius: 4px;
+    
+    border-radius: 10px;
     cursor: pointer;
+    width: 80px;
+    height: 40px;
+    align-content: center;
   }
   
   .book-btn:hover {
@@ -402,9 +488,7 @@ body {
     transition: transform 0.2s;
   }
   
-  .explore-more a:hover .arrow {
-    transform: translateX(4px);
-  }
+  
 
 .status {
     display: flex;
