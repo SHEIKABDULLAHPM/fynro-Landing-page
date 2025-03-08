@@ -1,14 +1,12 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    font-family: "Poppins";
-    font-weight: 600;
-    font-style: normal;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Adjust as needed */
+  font-style: normal;
 }
+
 
 body {
     background-color: #f8f7fa;
@@ -629,9 +627,9 @@ body {
   text-align: center;
 }
 
-.light-blue { background-color: #e6f3f4; }
-.light-peach { background-color: #fff4ec; }
-.light-purple { background-color: #f2f2fe; }
+.light-blue { background-color: #dcf1f4; }
+.light-peach { background-color: #fcf0e7; }
+.light-purple { background-color: #e4e4f9; }
 
 .profile-img {
   width: 100px;
